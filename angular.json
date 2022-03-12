@@ -165,6 +165,18 @@
             }
           },
           "defaultConfiguration": "production"
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": true,
+            "ssr": false,
+            "browserTarget": "Angular-SSR-Firebase:build:production",
+            "firebaseProject": "kanishkanaik-b3089",
+            "firebaseHostingSite": "kanishkanaik-b3089",
+            "serverTarget": "Angular-SSR-Firebase:server:production",
+            "prerenderTarget": "Angular-SSR-Firebase:prerender:production"
+          }
         }
       }
     }
