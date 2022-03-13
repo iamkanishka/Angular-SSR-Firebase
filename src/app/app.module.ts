@@ -8,10 +8,12 @@ import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { provideFunctions,getFunctions } from '@angular/fire/functions';
+import { AnimalDetailComponent } from './animal-detail/animal-detail.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AnimalDetailComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
